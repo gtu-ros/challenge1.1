@@ -68,7 +68,6 @@ class Turtle:
                 theta = -90.0    
 
         angular = 6.24 * theta / 360
-        print(angular)
         return angular - self.pose.theta
         
     def euclidean_distance(self, goal_pose):
