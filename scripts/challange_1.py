@@ -75,7 +75,6 @@ class Turtle:
         """Euclidean distance between current pose and the goal."""
         return sqrt(pow(float((goal_pose.x - self.pose.x)), 2) + pow(float((goal_pose.y - self.pose.y)), 2))
 
-
     def move2goal(self):    
 
         vel_msg = Twist()
@@ -104,9 +103,7 @@ class Turtle:
         vel_msg.linear.x = 0
         self.vel_pub.publish(vel_msg)
 
-
         rospy.spin()
-
 
 if __name__ == '__main__':
     try:
