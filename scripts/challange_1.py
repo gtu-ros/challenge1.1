@@ -72,7 +72,6 @@ class Turtle:
         return angular - self.pose.theta
         
     def euclidean_distance(self, goal_pose):
-        """Euclidean distance between current pose and the goal."""
         return sqrt(pow(float((goal_pose.x - self.pose.x)), 2) + pow(float((goal_pose.y - self.pose.y)), 2))
 
     def move2goal(self):    
